@@ -1,0 +1,10 @@
+Package: mlbstats
+Type: Package
+Title: MLB Stats
+Version: 0.1
+Date: 2018-05-20
+Author: Brian M. Bot
+Maintainer: Brian M. Bot <bot.brian@gmail.com>
+Imports: methods,utils,RCurl,RJSONIO,dplyr
+Description: MLB Stats access in R
+License: GPL
