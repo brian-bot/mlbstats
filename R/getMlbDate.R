@@ -19,10 +19,8 @@ getMlbDate <- function(d){
     event <- daysEvents$dates[[1]]$games[[i]]
     
     ## GRAB THE BOXSCORE IF GAME IS COMPLETED
-    if( event$status["statusCode"] == "F" ){
+    if( event$status["statusCode"] %in% c("F", "UR") ){
       if( event$gameType == "R" ){
-        ## POOR MANS CHECK TO ENSURE API RATE LIMIT NOT EXCEDED
-        # system("sleep 10")
         allData[[i]] <- getMlbEvent(event$gamePk)
       }
     } else{
