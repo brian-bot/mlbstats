@@ -21,7 +21,11 @@ getMlbDate <- function(d){
     ## GRAB THE BOXSCORE IF GAME IS COMPLETED
     if( event$status["statusCode"] %in% c("F", "UR") ){
       if( event$gameType == "R" ){
-        allData[[i]] <- getMlbEvent(event$gamePk)
+        if( event$gamePk == 530032 & d == "2018-06-18" ){
+          cat("THIS IS THE GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
+        } else{
+          allData[[i]] <- getMlbEvent(event$gamePk)
+        }
       }
     } else{
       ## IF THE GAME IS NOT COMPLETED - JUST PRINT A MESSAGE
