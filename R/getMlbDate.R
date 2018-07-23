@@ -7,7 +7,7 @@ getMlbDate <- function(d){
   daysEvents <- mlbstatsRestGET(paste("/schedule?sportId=1&date=", substr(d,6,7), "%2F", substr(d,9,10), "%2F", substr(d,1,4), sep=""))
   
   ## CHECK TO SEE IF THERE ARE ANY GAMES ON THIS DAY
-  ne <- daysEvents$dates[[1]]$totalGames
+  ne <- daysEvents$totalGames
   if( ne == 0 ){
     return(cat("No games today:", as.character(d), "\n"))
   }
