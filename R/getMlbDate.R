@@ -31,7 +31,7 @@ getMlbDate <- function(d){
       }
     } else{
       ## IF THE GAME IS NOT COMPLETED - JUST PRINT A MESSAGE
-      cat("Event", event$event_id, "was not complete:", event$event_status, "\n")
+      cat("Event", event$gamePk, "was not complete:", event$status["statusCode"], "\n")
     }
   }
   ## COMBINE MATRICES FOR EACH DAYS BATTERS AND PITCHERS
