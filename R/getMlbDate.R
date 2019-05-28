@@ -25,6 +25,10 @@ getMlbDate <- function(d){
           cat("THIS IS THE GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
         } else if( event$gamePk == 531387 & d == "2018-08-29" ){
           cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
+        } else if( event$gamePk == 565534 & d == "2019-09-06" ){
+          cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
+        } else if( event$gamePk == 567288 & d == "2019-05-28" ){
+          cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
         } else{
           allData[[i]] <- getMlbEvent(event$gamePk)
         }
