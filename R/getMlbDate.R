@@ -55,9 +55,11 @@ getMlbDate <- function(d){
           cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
         } else if( event$gamePk == 717324 & d == "2023-07-22" ){
           cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
+        } else if( event$gamePk == 716875 & d == "2023-08-24" ){
+          cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
         } else{
           allData[[i]] <- getMlbEvent(event$gamePk)
-        }
+        }716875
       }
     } else{
       ## IF THE GAME IS NOT COMPLETED - JUST PRINT A MESSAGE
