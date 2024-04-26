@@ -19,7 +19,7 @@ getMlbDate <- function(d){
     event <- daysEvents$dates[[1]]$games[[i]]
     
     ## GRAB THE BOXSCORE IF GAME IS COMPLETED
-    if( event$status[["statusCode"]] %in% c("F", "O", "UR", "FR") ){
+    if( event$status[["statusCode"]] %in% c("F", "O", "UR", "FR", "FG") ){
       if( event$gameType == "R" ){
         if( event$gamePk == 530032 & d == "2018-06-18" ){
           cat("THIS IS THE GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
