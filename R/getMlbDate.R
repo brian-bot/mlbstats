@@ -63,6 +63,8 @@ getMlbDate <- function(d){
           cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
         } else if( event$gamePk == 745180 & d == "2024-05-22" ){
           cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
+        } else if( event$gamePk == 746942 & d == "2024-08-26" ){
+          cat("THIS IS THE *OTHER* GOOFY EXCEPTION THAT ROSS AND DUANE ARE MAKING ME WORK AROUND")
         } else{
           allData[[i]] <- getMlbEvent(event$gamePk)
         }
